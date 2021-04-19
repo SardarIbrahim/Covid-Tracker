@@ -1,0 +1,230 @@
+.covid h1 {
+  font-weight: bold;
+  color: #ffbc20;
+}
+
+/* Logo And Credits */
+
+.img {
+  box-shadow: rgba(221, 31, 31, 0.13) 0px 20px 25px -5px,
+    rgba(240, 55, 55, 0.986) 0px 10px 10px -5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.covid .img {
+  /* width: 200px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img .selected {
+  font-size: 1.5rem;
+  color: #ffbc20;
+}
+.covid .img img {
+  border-radius: 50%;
+  width: 100px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.img .stats {
+  margin-right: 10px;
+}
+/* Boxes And Global Data */
+.global {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.global .box {
+  box-shadow: rgba(221, 31, 31, 0.13) 0px 20px 25px -5px,
+    rgba(240, 55, 55, 0.986) 0px 10px 10px -5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  color: #ffbc20;
+  width: 100%;
+  text-align: center;
+}
+
+.global .box h2 {
+  text-align: center;
+  display: inline;
+  width: 100%;
+  padding: 15px;
+}
+
+.box .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* paragraph */
+p {
+  color: white;
+}
+
+/* Button Styling */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: none;
+  border-color: #ffbc20;
+  width: 15%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffbc20;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Form */
+form {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+form input {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 50%;
+  margin-right: 70px;
+  outline: none;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+form input[type='text']:focus {
+  border-color: red;
+}
+
+/* NavLink */
+a {
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  color: #ffbc20;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.stats a:hover {
+  border-bottom: 1px solid coral;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .covid .img {
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .global {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .global .box {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .global {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .covid .img {
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn button {
+    margin-top: 20px;
+    width: 35%;
+  }
+
+  form button {
+    width: 20%;
+    margin-left: 0;
+  }
+
+  .global .box {
+    gap: 0.5rem;
+  }
+
+  .covid .img img {
+    margin-bottom: 0px;
+    width: 80px;
+  }
+
+  .img .selected {
+    margin-top: 0px;
+  }
+  .global .box .inner h2 {
+    font-size: 1.1rem;
+  }
+
+  .brand a {
+    padding: 5px;
+    margin: 0;
+  }
+}
